@@ -212,8 +212,6 @@ li {
   text-align: center;
 }
 .single-button {
-  background-color: var(--first-color);
-  color: var(--fifth-color);
   text-align: center;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -405,8 +403,6 @@ figure {
   background-color: var(--seventh-color);
 }
 .filter {
-  color: var(--fifth-color);
-  background-color: var(--second-color);
   transition-property: color background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -498,8 +494,6 @@ figure {
   border: 1px solid var(--seventh-color);
 }
 .clients-element svg {
-  border: var(--disabled-icon);
-  fill: var(--disabled-icon);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -640,13 +634,11 @@ figure {
   background-position: center;
 }
 .bottom-links {
-  color: var(--eighth-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-circle {
-  background-color: var(--icons-color);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

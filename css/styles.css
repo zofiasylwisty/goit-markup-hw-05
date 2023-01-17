@@ -404,10 +404,16 @@ figure {
   color: var(--first-color);
   background-color: var(--seventh-color);
 }
+.filter {
+  color: var(--fifth-color);
+  background-color: var(--second-color);
+  transition-property: color background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .filters-list > .filter-element:not(:last-child) {
   margin-right: 8px;
 }
-
 .main-part {
   display: flex;
   flex-direction: column;
@@ -440,6 +446,11 @@ figure {
 .cards-shadow:active {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.cards-shadow {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .grid-container {
   width: 1182px;
@@ -489,7 +500,7 @@ figure {
 .clients-element svg {
   border: var(--disabled-icon);
   fill: var(--disabled-icon);
-  transition-property: fill border;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

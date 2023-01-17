@@ -64,7 +64,9 @@
         <h1 class="first-headline">
           EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
         </h1>
-        <button class="single-button" type="button">Zamów usługę</button>
+        <button data-modal-open class="single-button" type="button">
+          Zamów usługę
+        </button>
       </div>
       <section class="section">
         <div class="container">
@@ -485,5 +487,13 @@
         </div>
       </div>
     </footer>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-window">
+        <button type="button" class="close-button" data-modal-close>
+          <div class="cross-button">x</div>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

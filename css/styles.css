@@ -63,6 +63,16 @@ body {
 .menu > .menu-component:not(:last-child) {
   margin-right: 46px;
 }
+.link:hover,
+.link:focus,
+.link:active {
+  color: var(--seventh-color);
+}
+.link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .agency::after {
   content: "";
   background-color: var(--seventh-color);
@@ -104,7 +114,12 @@ body {
 .contact:hover > svg {
   fill: #2196f3;
 }
-
+.contact {
+  color: var(--third-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;

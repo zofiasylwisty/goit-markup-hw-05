@@ -250,7 +250,8 @@ li {
 .close {
   color: var(--fifth-color);
   font-family: "Roboto";
-  font-size: 15px;
+  font-size: 16px;
+  padding-top: 0;
 }
 .closing-button {
   height: 30px;

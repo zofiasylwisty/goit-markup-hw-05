@@ -221,7 +221,65 @@ li {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.overlay {
+  background: var(--first-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  height: 581px;
+  width: 528px;
+  margin-top: 400px;
+  margin-left: 810px;
+  display: block;
+  transition-property: visibility opacity transform;
+  transition-duration: 2s;
+  transform: translate(-50%, -50%);
+  transition-timing-function: ease-in;
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+.is-hidden .overlay {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+.close {
+  color: var(--fifth-color);
+  font-family: "Roboto";
+  font-size: 15px;
+}
+.closing-button {
+  height: 30px;
+  width: 30px;
+  background-color: var(--first-color);
+  border: 1px solid var(--close-color);
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 6px;
+  position: relative;
+  top: 8px;
+  left: 490px;
+}
+.backdrop {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  transition-property: visibility;
+  visibility: visible;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
 .list-icon {
   background-color: var(--second-color);
   width: 270;

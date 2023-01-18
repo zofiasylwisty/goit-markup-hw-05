@@ -473,6 +473,32 @@ figure {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.cards-container {
+  position: relative;
+  overflow: hidden;
+}
+.card-item:hover .card-label,
+.card-item:focus .card-label {
+  transform: translateY(0);
+}
+.card-label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--first-color);
+  width: 370px;
+  height: 294px;
+  padding: 49px 45px 49px 24px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translateY(100%);
+  background-color: #2196f3e5;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .grid-container {
   width: 1182px;
   margin-left: 215px;

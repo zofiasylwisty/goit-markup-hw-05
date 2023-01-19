@@ -553,7 +553,7 @@ figure {
   width: 370px;
   height: 294px;
   padding: 49px 45px 49px 24px;
-  top: 0;
+  top: 2.5px;
   left: 0;
   position: absolute;
   transform: translateY(100%);

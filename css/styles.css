@@ -522,6 +522,7 @@ figure {
 }
 .card-item {
   flex-basis: calc((100% - 60px) / 3);
+  max-width: 370px;
 }
 .cards-shadow:hover,
 .cards-shadow:focus,
@@ -537,6 +538,7 @@ figure {
 .cards-container {
   position: relative;
   overflow: hidden;
+  max-width: 370px;
 }
 .card-item:hover .card-label,
 .card-item:focus .card-label {
@@ -553,7 +555,7 @@ figure {
   width: 370px;
   height: 294px;
   padding: 49px 45px 49px 24px;
-  top: 2.5px;
+  top: 0px;
   left: 0;
   position: absolute;
   transform: translateY(100%);
